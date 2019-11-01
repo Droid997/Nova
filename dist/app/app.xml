@@ -1,0 +1,14 @@
+<core:component xmlns:core="nova.component" 
+    xmlns="http://www.w3.org/1999/xhtml">
+
+     <abbr title="World Health Organization">WHO</abbr>
+    <h2 class="w3-wide">THE BAND</h2>
+    <p class="w3-opacity">
+        <i>We love music</i>
+    </p>
+    <button click="onTilakClick">Tilak</button>
+    <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <core:component componentName="app2" />
+</core:component>

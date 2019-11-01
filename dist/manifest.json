@@ -1,0 +1,11 @@
+{
+"Components":[
+    {
+        "app":"app/"
+    },
+    {
+        "app2":"app2/"
+    }
+]
+
+}
