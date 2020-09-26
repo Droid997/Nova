@@ -2,7 +2,7 @@ import { Logger, mComponentPaths, getModule } from "./nova-loader";
 import { Module, execModule } from './module';
 import { mAJAXLoader } from '../util/ajax';
 import jQuery from '../thirdparty/jQuery';
-import { Component } from './Component';
+import { Component } from './component';
 
 enum NODETYPE {
     ELEMENT_NODE = 1,//An Element node like <p> or <div>.

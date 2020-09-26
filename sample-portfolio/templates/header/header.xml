@@ -1,0 +1,61 @@
+<core:component xmlns:core="nova.component" xmlns="http://www.w3.org/1999/xhtml">
+    <div class="row">
+        <div class="col-4">
+            <div class="d-flex ">
+                <img class="mx-auto" src="sample-portfolio/images/profile.png" width="auto" height="300px" />
+            </div>
+            <p class="text-center mt-2 profileName">Dishanth H M</p>
+        </div>
+        <div class="col ">
+            <div class="divider" />
+
+            <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <div class="row">
+                        <div class="col" width="80%">
+                            <div class="flex-column justify-content-end align-items-center">
+                                <div class="row m-3">
+                                    <i class="fa fa-home iconSize" aria-hidden="true"></i>
+                                    <p class="font-weight-bold text-justify m-1">Nelamangala, Bangalore Karnataka-
+                                        562123 </p>
+                                </div>
+
+                                <div class="row m-3">
+                                    <i class="fa fa-phone iconSize" aria-hidden="true"></i>
+                                    <p class="font-weight-bold text-justify m-1">+91 8792759906</p>
+                                </div>
+
+                                <div class="row m-3">
+                                    <i class="fa fa-envelope-o iconSize" aria-hidden="true"></i>
+                                    <a class="font-weight-bold text-justify m-1"
+                                        href="mailto:dishanth.hm097@gmail.com">dishanth.hm097@gmail.com</a>.
+
+                                </div>
+
+                                <div class="row m-3">
+                                    <i class="fa fa-github-alt iconSize" aria-hidden="true"></i>
+                                    <a class="font-weight-bold text-justify m-1"
+                                        href="https://github.com/Droid997">Droid997(Dishanth HM)· GitHub</a>.
+
+                                </div>
+
+                                <div class="row m-3">
+                                    <i class="fa fa-calendar iconSize" aria-hidden="true"></i>
+                                    <p class="font-weight-bold text-justify m-1">DOB: 30-05-1997</p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col text-right">
+                            <img src="sample-portfolio/images/github_qr.png" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</core:component>

@@ -1,0 +1,28 @@
+<core:component xmlns:core="nova.component" xmlns="http://www.w3.org/1999/xhtml">
+
+    <div class="row  mt-3">
+        <div class="col-4">
+            <div class="d-flex-column ml-5">
+                <p class="font-weight-bolder">ㅡ</p>
+                <p class="font-weight-bolder text-start ">Experience</p>
+            </div>
+
+        </div>
+        <div class="col ">
+            <div class="divider" />
+
+            <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <p>
+                        Javascript, Advance javascript, jQuery, CSS, HTML, XML, JAVA, Python, Typescript, Angular,
+                        React, OpenUI5, SAPUI5, Nodejs, MYSQL, Firebase , ORACLE, Mobile Applications, Hybrid apps,
+                        Cordova, Server deployment, oDATA, REST API, UNITY, SPA,SPRING BOOT, npm, FCM.
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</core:component>

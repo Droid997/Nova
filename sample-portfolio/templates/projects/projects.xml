@@ -1,0 +1,122 @@
+<core:component xmlns:core="nova.component" xmlns="http://www.w3.org/1999/xhtml">
+
+    <div class="row  mt-3">
+        <div class="col-4">
+            <div class="d-flex-column ml-5">
+                <p class="font-weight-bolder">ㅡ</p>
+                <p class="font-weight-bolder text-start ">
+                    Projects</p>
+            </div>
+
+        </div>
+        <div class="col ">
+            <div class="divider" />
+
+            <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <div class="card-title d-flex align-items-center">
+                        <h5 class="font-weight-bold m-0">NOVA JS - </h5><i class="fa fa-archive fa-lg ml-1"
+                            aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        Client Side Web Framework like reactjs, Angularjs inspired from openUI5 to create Single page
+                        Applications (SPA)
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <div class="card-title d-flex align-items-center">
+                        <h5 class="font-weight-bold m-0">Custom Array - </h5><i class="fa fa-list fa-lg ml-1"
+                            aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        Provides some of the custom methods to an Array to make life simpler, hosted in cdn for global
+                        access.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <div class="card-title d-flex align-items-center">
+                        <h5 class="font-weight-bold m-0">KAT - API </h5><i class="fa fa-globe fa-lg ml-1"
+                            aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        Provides API to fetch data from KAT, hosted in npm for global access.
+                    </p>
+                </div>
+
+            </div>
+
+
+
+            <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <div class="card-title d-flex align-items-center">
+                        <h5 class="font-weight-bold m-0">Notepad - APP </h5><i class="fa fa-globe fa-lg ml-1"
+                            aria-hidden="true"></i>
+                    </div>
+                    <p>
+                        Created using openUI5 , packed with the sweetness of ui5 and functionality of node .
+
+                    </p>
+                </div>
+
+            </div>
+
+
+
+            <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <div class="card-title d-flex align-items-center">
+                        <h5 class="font-weight-bold m-0">Notes - Web App (Angular)  </h5><i class="fa fa-globe fa-lg ml-1"
+                            aria-hidden="true"></i> <i class="fa fa-mobile fa-2x ml-1"
+                            aria-hidden="true"></i>
+                    </div>
+                    <p>
+                       Cross platform web app , create a note on the web and access it in your phone .
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <div class="card-title d-flex align-items-center">
+                        <h5 class="font-weight-bold m-0">BusyLoader - openUI5 Custom Control  </h5><i class="fa fa-globe fa-lg ml-1"
+                            aria-hidden="true"></i> <i class="fa fa-mobile fa-2x ml-1"
+                            aria-hidden="true"></i>
+                    </div>
+                    <p>
+                     Custom Busy dialog which can be used in openUI5 applications.
+                    </p>
+                </div>
+
+            </div>
+
+
+             <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <div class="card-title d-flex align-items-center">
+                        <h5 class="font-weight-bold m-0">Expense Tracker - openUI5 and php integration  </h5><i class="fa fa-globe fa-lg ml-1"
+                            aria-hidden="true"></i> 
+                    </div>
+                    <p>
+                    Built with openUi5 , php and mysql to create seamless integration. 
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</core:component>

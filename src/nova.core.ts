@@ -11,9 +11,12 @@ import novaLoader from './nova/nova-loader';
         global["nova"].createComponent = novaLoader.createComponent;
 
         let currentScript = document.currentScript;
-        let loaderScript = currentScript.dataset["init"] || undefined;
+        const loaderScript = currentScript.dataset["init"] || undefined;
+        const maniestPath=currentScript.dataset["manifest"] || undefined;
         if (loaderScript) {
-            novaLoader.initLoader(loaderScript);
+            novaLoader.initLoader(loaderScript,maniestPath);
+        }else{
+            throw new Error("data-init tag is missing ")
         }
 
 

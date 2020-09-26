@@ -1,0 +1,42 @@
+<core:component xmlns:core="nova.component" xmlns="http://www.w3.org/1999/xhtml">
+
+    <div class="row  mt-3">
+        <div class="col-4">
+            <div class="d-flex-column ml-5">
+                <p class="font-weight-bolder">ㅡ</p>
+                <p class="font-weight-bolder text-start ">
+                    Strengths</p>
+            </div>
+
+        </div>
+        <div class="col ">
+            <div class="divider" />
+
+            <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <div class="row templatePrimaryColor font-weight-bold" >
+                        <div class="col">
+                            <p>Teamwork </p>
+                            <p>Creative </p>
+                            <p>Dedicated </p>
+                        </div>
+                        <div class="col">
+                            <p>Responsibility </p>
+                            <p>Optimistic </p>
+                            <p>Tactful </p>
+                        </div>
+
+                         <div class="col">
+                            <p>Adaptable </p>
+                            <p>Analytical </p>
+                            <p>Detail Oriented </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</core:component>

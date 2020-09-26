@@ -65,6 +65,15 @@ export function mAJAXLoader(module: Module, success: Function, error?: Function,
     });
 }
 
+export function AJAXLoaderP(url:string,type: string){
+    return jQuery.ajax({
+        url: url,
+        dataType: type,
+        async: true,
+        cache: true
+    });
+}
+
 export function AJAXLoader(url: string, type: string, success: Function, error?: Function, aysnc: boolean = true) {
     jQuery.ajax({
         url: url,

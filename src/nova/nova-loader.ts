@@ -3,9 +3,10 @@ import $ from '../thirdparty/jQuery';
 import logger from '../util/logger';
 import { Module, ModuleState, execModule } from './module';
 import { isArray } from '../util/util';
-import { AJAXLoader, loadSyncXHR } from '../util/ajax';
-import { Component } from './Component';
+import { AJAXLoader, loadSyncXHR, AJAXLoaderP } from '../util/ajax';
+import { Component } from './component';
 import controller from './controller';
+import { data } from 'jquery';
 
 /**
  * @todo validate URL
@@ -90,6 +91,7 @@ export function getModule(module_name?: string, normalize?: boolean): Module {
             let module = mModules[module_name]
             return module;
         }
+
     } else if (module_name) {
 
         if (normalize)
@@ -251,7 +253,6 @@ function novaDefine(sResourceName: any, dependenices: any, factory: any, bexport
         vdependencies = sResourceName;
         vfactory = dependenices;
         vexport = factory;
-
         sResourceName = oCurrentExecutingScripts.length > 0 ? oCurrentExecutingScripts[oCurrentExecutingScripts.length - 1] : null;
 
     }
@@ -264,69 +265,66 @@ function novaDefine(sResourceName: any, dependenices: any, factory: any, bexport
 /**
  * Parse manifest.json file
  */
-function mainfestParser(): Promise<boolean> {
-    return new Promise((resolve, reject) => {
-        const manifest = "manifest.json";
+async function mainfestParser(maniestPath:string):Promise<boolean> {
+    try {
+
+        if(maniestPath)
+        {
+            maniestPath =encodeURI(maniestPath);
+            maniestPath+="/manifest.json";
+        }
+        else
+        maniestPath="manifest.json"
+
+        const manifest =maniestPath
         const type = "JSON";
+        const result: object=await AJAXLoaderP(manifest,type);
+        extractProperties(result);
+        return true;
+    } catch (error) {
+        if(error.status===200)
+            Logger.error("Parsing Manifest file");
+        else
+        Logger.error(error.responseText);
+        
+    }
 
-        const fnsuccess = (result: object) => {
-            Object.keys(result).forEach((key) => {
-                if (key === "Components") {
-                    result[key].forEach((element: object) => {
-                        const componentName = Object.keys(element)[0];
-                        const componentPath = Object.values(element)[0];
-                        mComponentPaths[componentName] = componentPath;
-                        Logger.success("Registered Component (" + componentName + ",'" + componentPath + "')");
-                    });
-                }
-            });
-            resolve(true);
-        }
+    function extractProperties(result:object){
 
-        const failure = (error) => {
-            throw error;
-            reject(false);
-        }
+        Object.keys(result).forEach(key => {
+            if (key === "Components") {
 
-        AJAXLoader(manifest, type, fnsuccess, failure)
-    });
+                const definedComponets=result[key];
+                Object.keys(definedComponets).forEach(componentName=>{
+                    let componentObject=definedComponets[componentName];
+                    Object.keys(componentObject).forEach(property=>{
+                        if(property=="path"){
+                            const componentRegisterdPath=componentObject[property]
+                            mComponentPaths[componentName] = componentRegisterdPath;
+                            Logger.success("Registered Component (" + componentName + ",'" + componentRegisterdPath + "')");
+                        }
+                    })
+                })
+            }
+        });
+    }
+   
 
 }
 
 // Runs the data-main script 
 // Entry Point
-function initLoader(loaderScript: string): void {
-
-
+async function initLoader(loaderScript: string,maniestPath:string): Promise<boolean> {
     oCurrentExecutingScripts.push(loaderScript);
-    // let module = getModule();
-    // module.state = ModuleState.LOADING;
-
     var url = normalizeURL(loaderScript);
-    function success(data: string) {
-
-        // module.state = ModuleState.LOADED;
-        // module.data = data;
-        // execModule(module);
-        execModule(data);
-        // eval(data);
-
-    }
-
-    function error() {
-        throw new Error("Module Not Found");
-    }
-
     try {
-        mainfestParser().then(() => {
-            // AJAXLoader(module.moduleName, "text", success, error);
-            AJAXLoader(url, "text", success, error);
-        }).catch((error) => {
-            throw error;
-        })
+        await mainfestParser(maniestPath)
+        const data =await AJAXLoaderP(url,"text");
+        execModule(data);
+        return true;
 
     } catch (error) {
-        throw new Error(error);
+        throw new Error(error.message);
     }
 
 }

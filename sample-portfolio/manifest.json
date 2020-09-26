@@ -1,0 +1,32 @@
+{
+    "Components": {
+        "container": {
+            "path": "sample-portfolio/templates/container/"
+        },
+        "header": {
+            "path": "sample-portfolio/templates/header/"
+        },
+        "objective": {
+            "path": "sample-portfolio/templates/objective/"
+        },
+        "work_expierence": {
+            "path": "sample-portfolio/templates/work_expierence/"
+        },
+        "projects": {
+            "path": "sample-portfolio/templates/projects/"
+        },
+        "skills": {
+            "path": "sample-portfolio/templates/skills/"
+        },
+        "experience": {
+            "path": "sample-portfolio/templates/experience/"
+        },
+        "strengths": {
+            "path": "sample-portfolio/templates/strengths/"
+        },
+        "education": {
+            "path": "sample-portfolio/templates/education/"
+        }
+    }
+
+}

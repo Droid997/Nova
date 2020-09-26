@@ -30,7 +30,11 @@ export class Component extends Base {
         let componentPath = mComponentPaths[component_name];
         if (componentPath) {
             this.componentName = component_name;
-            let viewName = componentPath.substr(0, componentPath.indexOf("/")) + ".xml";
+            let viewName =`${component_name}.xml`;
+
+            // let viewName = componentPath.substr(0, componentPath.indexOf("/")) + ".xml";
+            // let viewName=componentPath.endsWith("/")==true?componentPath.substring(0,componentPath.length-1):componentPath;
+            // viewName+=".xml";
             this.mView = getModule(componentPath + viewName, false/*Normalize*/);
 
             this.mView["componentName"] = component_name;

@@ -1,0 +1,58 @@
+<core:component xmlns:core="nova.component" xmlns="http://www.w3.org/1999/xhtml">
+
+    <div class="row mt-3">
+        <div class="col-4">
+            <div class="d-flex-column ml-5">
+                <p class="font-weight-bolder">ㅡ</p>
+                <p class="font-weight-bolder text-start ">
+                    Work Experience</p>
+            </div>
+
+        </div>
+        <div class="col ">
+            <div class="divider" />
+
+            <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <h5 class="card-title font-weight-bold">Maventic / Software Developer</h5>
+                    <h6 class="card-subtitle mb-2 font-weight-bold templatePrimaryColor">Jul 2018 - PRESENT, Bangalore
+                        (2.5+ Years) </h6>
+                    <ul>
+                        <li>Worked in a product based company.</li>
+                        <li>Created a Company Standalone Editor for developing WEB Apps, which can be used to create a multi functional END to END web applications.</li>
+                        <li>Created an Automation tool to CRUD in the database.</li>
+                        <li>Created a SAP-PM Module (MOAST) mobile app.</li>
+                        <li>Worked on openUI5 to create front end mobile applications.</li>
+                        <li>Created applications for Android and IOS using cordova.</li>
+                        <li>Created custom controls in openUI5.</li>
+                        <li>Wrote optimized programs to handle large sets of data. </li>
+                        <li>Wrote programs to handle client specific data for multiple devices. </li>
+                        <li>Deployed java servers in aws. </li>
+                    </ul>
+                </div>
+            </div>
+
+
+             <div class="card mt-2 cardWidth">
+                <div class="card-body ">
+                    <h5 class="card-title font-weight-bold">Freelancer / Fullstack Developer</h5>
+                    <h6 class="card-subtitle mb-2 font-weight-bold templatePrimaryColor">Jul 2019 - PRESENT,  Bangalore (1.2+ Years )</h6>
+                    <ul>
+                        <li>Worked with a sweden client to integrate laravel, go lang and python languages.</li>
+                        <li>Built a framework architecture to handle large data seamlessly.</li>
+                        <li>Created an automated job to send email to all the clients.</li>
+                        <li>Built python modules to connect SAP to check systems are running , if not sends a mail to respective clients regarding the same.</li>
+                        <li>Worked on openUI5 to create front end mobile applications.</li>
+                        <li>Built python module which uses multiprocessing to connect thousands of SAP systems  at the same time and retrieve data. and writes it to respective client databases.</li>
+                        <li>Created graph to simulate the data stored using above activities.</li>
+                        <li>Wrote optimized programs to handle large sets of data. </li>
+                        <li>Worked in spring boot, OData.  </li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</core:component>

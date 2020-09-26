@@ -1,0 +1,14 @@
+<core:component xmlns:core="nova.component" xmlns="http://www.w3.org/1999/xhtml">
+
+
+    <div class="container-fluid m-5" style="width='80%'">
+        <core:component componentName="header" />
+        <core:component componentName="objective" />
+        <core:component componentName="work_expierence" />
+        <core:component componentName="projects" />
+        <core:component componentName="skills" />
+        <core:component componentName="experience" />
+        <core:component componentName="strengths" />
+        <core:component componentName="education" />
+    </div>
+</core:component>
